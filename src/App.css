@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title{
+    font-size:30px;
+    color:#fa2828;
+    font-weight:bold;
+}
+button{
+    height: 40px;
+    border-radius: 10px;
+    background: #fa2828;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+#payment-button{
+    width: 180px;
+    transition: background 0.2s ease;
+}
+#payment-button:hover{
+    background: #EF3340;
+}
+.pay-method-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    & .pay-method-item {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: "Noto Sansf KR", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #444;
+    background-color: #fff;
+    padding: .6em 1.4em .5em .8em;
+    margin: 0;
+    border: 1px solid #aaa;
+    border-radius: .5em;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+}
+select:hover {
+    border-color: #EF3340;
+}
+#selectBox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 150px;
+    cursor: pointer;
+}
+input[type=checkbox], input[type=radio] {
+    accent-color: #EF3340;
+    outline: none;
+    cursor: pointer;
+}
